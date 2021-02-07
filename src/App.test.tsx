@@ -13,7 +13,7 @@ test('renders headers', () => {
 
 test('getDiferenceInMinutes', () => {
   render(<App />);
-  const getDiferenceInMinutes = jest.fn;
+  const getDiferenceInMinutes = jest.fn();
   const a= new Date();
   const b= new Date();
   expect(getDiferenceInMinutes).toBeCalledWith(b,a);
